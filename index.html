@@ -64,7 +64,7 @@
     </div>
 </header>
 
-<body class="sans-serif">
+<body class="sans-serif sm:overflow-x-hidden">
     <div class="top-banner flex flex-col items-center text-center overflow-y-scroll">
         <div class="w-full flex justify-center">
             <img src="assets/banner.png" alt="">
@@ -379,18 +379,31 @@
     <!-- Foter section start here  -->
 
     <div class="fotter bg-[rgb(28,28,28)] mt-0">
-        <div class="foter flex flex-col mx-auto w-1/2 text-center ">
-            <div class="foter_arrow  pt-24 text-[rgb(233,233,233)]">
-                <a class=> <i class="fa-solid fa-arrow-right px-2 py-2 rounded-full bg-[rgb(171,239,95)] text-black "
+        <div class="foter flex flex-col mx-auto w-1/2 text-center">
+            <div class="foter_arrow pt-24 text-[rgb(233,233,233)]">
+                <a> <i class="fa-solid fa-arrow-right px-2 py-2 rounded-full bg-[rgb(171,239,95)] text-black"
                         style="transform: rotate(328deg);"></i>
                 </a> <span class="font-semibold text-3xl ml-2">Rinterio</span>
             </div>
-            <p class="pb-4 pt-4 text-[rgb(115,115,115)]">The barn house captivates with its blend of rustic charm
-                and modern sophistication, <br>
-                featuring weathered wood, sleek metal accents.</p>
+            <p class="pb-4 pt-4 text-[rgb(115,115,115)] sm: w-full text-center  whitespace">
+                The barn house captivates with its blend of rustic charm and modern sophistication, <br>
+                featuring weathered wood, sleek metal accents.
+            </p>
+            
         </div>
-
-
+    
+        <!--  for small devices -->
+        <div class="navbar-center flex justify-center lg:hidden">
+            <ul class=" menu menu-vertical text-center">
+              <li class="text-[rgb(233,233,233)] text-lg"><a>Home</a></li>
+              <li class="text-[rgb(233,233,233)] text-lg"><a>Services</a></li>
+              <li class="text-[rgb(233,233,233)] text-lg"><a>Portfolio</a></li>
+              <li class="text-[rgb(233,233,233)] text-lg"><a>Blogs</a></li>
+              <li class="text-[rgb(233,233,233)] text-lg"><a>Contact Us</a></li>
+            </ul>
+          </div>  
+<!--     
+         for larger devices -->
         <div class="navbar-center hidden lg:flex justify-center">
             <ul class="menu menu-horizontal px-1 gap-x-20">
                 <li class="text-[rgb(233,233,233)] text-lg"><a>Home</a></li>
@@ -400,16 +413,15 @@
                 <li class="text-[rgb(233,233,233)] text-lg"><a>Contact Us</a></li>
             </ul>
         </div>
-
-
+    
         <div class="foter_arrow text-center pt-10 pb-14">
             <a class="btn rounded-full bg-[rgb(171,239,95)] font-bold text-xl">Book Consult
                 <i class="fa-solid fa-arrow-right px-1 py-1 rounded-full bg-[rgb(0,0,0)] font-semibold text-white"
                     style="transform: rotate(328deg);"></i>
             </a>
         </div>
-
     </div>
+    
     <!-- Foter section ends  here  -->
 </body>
 
